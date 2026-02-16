@@ -85,7 +85,7 @@ const Hero: React.FC = () => {
         transition={{ duration: 1.2, ease: 'easeOut' }}
       >
         <Image
-          src="/assets2/home/hero-rays.png"
+          src="/assets/home/hero-rays.png"
           alt=""
           width={1520}
           height={1471}

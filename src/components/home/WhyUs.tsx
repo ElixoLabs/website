@@ -46,19 +46,19 @@ const WhyUs: React.FC = () => {
           
           <div className="absolute inset-0 rounded-2xl overflow-hidden pointer-events-none">
             <div className="absolute top-0 left-0 right-0 w-full">
-              <Image src="/assets2/home/difference-top.svg" alt="" width={1200} height={400} className="w-full h-auto" />
+              <Image src="/assets/home/difference-top.svg" alt="" width={1200} height={400} className="w-full h-auto" />
             </div>
             <div className="absolute bottom-0 left-0 right-0 w-full">
-              <Image src="/assets2/home/difference-bottom.svg" alt="" width={1200} height={400} className="w-full h-auto" />
+              <Image src="/assets/home/difference-bottom.svg" alt="" width={1200} height={400} className="w-full h-auto" />
             </div>
           </div>
 
           <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[78%] max-w-300 z-2 pointer-events-none">
-            <Image src="/assets2/home/difference-top-notch.png" alt="" width={1160} height={1082} className="w-full h-auto" />
+            <Image src="/assets/home/difference-top-notch.png" alt="" width={1160} height={1082} className="w-full h-auto" />
           </div>
 
           <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[78%] max-w-300 z-2 pointer-events-none">
-            <Image src="/assets2/home/difference-bottom-patch.png" alt="" width={1160} height={87} className="w-full h-auto" />
+            <Image src="/assets/home/difference-bottom-patch.png" alt="" width={1160} height={87} className="w-full h-auto" />
           </div>
 
           <motion.div

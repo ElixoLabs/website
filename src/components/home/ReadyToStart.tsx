@@ -32,7 +32,7 @@ const ReadyToStart: React.FC = () => {
 
           <div className="absolute top-0 left-0 right-0 w-full z-0">
             <Image
-              src="/assets2/home/ready-to-start-top.svg"
+              src="/assets/home/ready-to-start-top.svg"
               alt=""
               width={1200}
               height={400}
@@ -43,7 +43,7 @@ const ReadyToStart: React.FC = () => {
 
           <div className="hidden md:block absolute left-0 top-0 bottom-0 w-40 md:w-77.5 z-0">
             <Image
-              src="/assets2/home/cta-left-abstract.png"
+              src="/assets/home/cta-left-abstract.png"
               alt=""
               width={310}
               height={485}
@@ -54,7 +54,7 @@ const ReadyToStart: React.FC = () => {
 
           <div className="hidden md:block absolute right-0 top-0 bottom-0 w-40 md:w-77.5 z-0">
             <Image
-              src="/assets2/home/cta-right-abstract.png"
+              src="/assets/home/cta-right-abstract.png"
               alt=""
               width={310}
               height={485}
@@ -66,7 +66,7 @@ const ReadyToStart: React.FC = () => {
 
         <div className="absolute top-0 left-0 w-full z-0 pointer-events-none">
           <Image
-            src="/assets2/home/cta-top-patch.png"
+            src="/assets/home/cta-top-patch.png"
             alt=""
             width={1481}
             height={1382}
@@ -77,7 +77,7 @@ const ReadyToStart: React.FC = () => {
 
         <div className="absolute bottom-0 left-0 w-full z-0 pointer-events-none">
           <Image
-            src="/assets2/home/cta-bottom-patch.png"
+            src="/assets/home/cta-bottom-patch.png"
             alt=""
             width={1484}
             height={112}

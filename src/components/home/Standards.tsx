@@ -45,7 +45,7 @@ const Standards: React.FC = () => {
           transition={{ duration: 0.7, delay: 0.2, ease: 'easeOut' }}
         >
           <Image
-            src="/assets2/home/predictive-main.png"
+            src="/assets/home/predictive-main.png"
             alt="Engineering Standards"
 
             width={540}

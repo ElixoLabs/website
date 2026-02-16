@@ -10,17 +10,17 @@ import Link from 'next/link';
 
 const featureCards = [
   {
-    image: '/assets2/home/feature-img-1.png',
+    image: '/assets/home/feature-img-1.png',
     title: 'AI Agent Systems',
     description: 'Purpose-built agents that handle real business operations autonomously.',
   },
   {
-    image: '/assets2/home/feature-card-2.png',
+    image: '/assets/home/feature-card-2.png',
     title: 'Operational Platforms',
     description: 'Custom internal tools that replace spreadsheet chaos with proper systems.',
   },
   {
-    image: '/assets2/home/feature-img-3.png',
+    image: '/assets/home/feature-img-3.png',
     title: 'Intelligent Automation',
     description: 'Workflows that reason, decide, and act - beyond simple triggers.',
   },
@@ -28,12 +28,12 @@ const featureCards = [
 
 const featureCardsRow2 = [
   {
-    image: '/assets2/home/feature-img-4.png',
+    image: '/assets/home/feature-img-4.png',
     title: 'Product Engineering',
     description: 'Full product builds with architecture-first approach, designed to scale.',
   },
   {
-    image: '/assets2/home/feature-img-5.png',
+    image: '/assets/home/feature-img-5.png',
     title: 'Technical Strategy',
     description: 'System design and architectural planning before you build.',
   },
@@ -254,7 +254,7 @@ const Features: React.FC = () => {
               <span className="relative text-base font-medium text-white text-center">
                 weeks, not months
                 <div className="absolute -bottom-5 md:-bottom-6 -left-4 md:-left-8 w-24 md:w-32 h-8 md:h-10 pointer-events-none">
-                  <Image src="/assets2/home/features-underline.png" alt="" fill className="object-contain" />
+                  <Image src="/assets/home/features-underline.png" alt="" fill className="object-contain" />
                 </div>
               </span>
             </div>

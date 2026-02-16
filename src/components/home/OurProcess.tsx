@@ -31,7 +31,7 @@ const tabContent: Record<
     title: '01 - Discovery',
     description: 'We start with a conversation. You describe the problem. We ask questions. Together, we determine if ElixoLabs is the right fit for what you need. No forms to fill out. No discovery phase invoices. Just a conversation.',
 
-    image: '/assets2/home/features-smart-replies.png',
+    image: '/assets/home/features-smart-replies.png',
     stat1: { value: 'Free', label: 'Initial consultation' },
     stat2: { value: '24h', label: 'Response time' },
   },
@@ -40,7 +40,7 @@ const tabContent: Record<
     title: '02 - Architecture',
     description: 'We design the system before we write the first line of code. You receive a proposal with an architecture overview, milestone breakdown, timeline, and investment. You know exactly what you\'re getting before anything is built.',
 
-    image: '/assets2/home/features-auto-followups.png',
+    image: '/assets/home/features-auto-followups.png',
     stat1: { value: 'Clear', label: 'Scope defined upfront' },
     stat2: { value: 'Full', label: 'Technical documentation' },
   },
@@ -49,7 +49,7 @@ const tabContent: Record<
     title: '03 - Build',
     description: 'We build in milestones. Each milestone produces working, deployable software - not wireframes or mockups. You see real progress every week. You can give feedback on working systems, not static documents.',
 
-    image: '/assets2/home/features-conversation-insights.png',
+    image: '/assets/home/features-conversation-insights.png',
     stat1: { value: 'Weekly', label: 'Progress updates' },
     stat2: { value: '100%', label: 'Working software' },
   },
@@ -58,7 +58,7 @@ const tabContent: Record<
     title: '04 - Deploy',
     description: 'We deploy to production. We test in production. We document everything. When we hand over the system, it\'s running, monitored, and ready.',
 
-    image: '/assets2/home/features-priority-sorting.png',
+    image: '/assets/home/features-priority-sorting.png',
     stat1: { value: 'Full', label: 'Production deployment' },
     stat2: { value: 'Complete', label: 'Handoff documentation' },
   },
@@ -102,10 +102,10 @@ const OurProcess: React.FC = () => {
   return (
     <section id="process" className="relative flex flex-col items-center justify-center px-5 md:px-10 py-16 md:py-24 overflow-hidden w-full">
       <div className="absolute bottom-20 -left-2.5 w-64 h-[718px] pointer-events-none hidden xl:block z-0">
-        <Image src="/assets2/home/features-abstract-left.png" alt="" fill className="object-contain" />
+        <Image src="/assets/home/features-abstract-left.png" alt="" fill className="object-contain" />
       </div>
       <div className="absolute bottom-20 -right-2.5 w-64 h-[718px] pointer-events-none hidden xl:block z-0">
-        <Image src="/assets2/home/features-abstract-right.png" alt="" fill className="object-contain" />
+        <Image src="/assets/home/features-abstract-right.png" alt="" fill className="object-contain" />
       </div>
 
       <motion.div

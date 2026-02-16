@@ -96,7 +96,7 @@ const WhyItMatters: React.FC = () => {
           transition={{ duration: 0.7, delay: 0.2, ease: 'easeOut' }}
         >
           <Image
-            src="/assets2/home/why-image.png"
+            src="/assets/home/why-image.png"
             alt="Intelligence Is Architecture"
             fill
             className="object-cover"
