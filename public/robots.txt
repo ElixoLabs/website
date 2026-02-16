@@ -1,0 +1,18 @@
+# ElixoLabs Robots.txt
+User-agent: *
+Allow: /
+Disallow: /api/
+
+# Sitemaps
+Sitemap: https://elixolabs.com/sitemap.xml
+
+# Crawl-delay for all bots
+Crawl-delay: 0
+
+# Google-specific
+User-agent: Googlebot
+Allow: /
+
+# Bing-specific
+User-agent: Bingbot
+Allow: /
