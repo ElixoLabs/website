@@ -95,7 +95,10 @@ export const metadata: Metadata = {
   manifest: "/manifest.json",
   alternates: {
     canonical: siteUrl,
-  }
+  },
+  other: {
+    'msvalidate.01': '90FB6BD570FDA55663E6161592232EB6',
+  },
 };
 
 export default function RootLayout({
