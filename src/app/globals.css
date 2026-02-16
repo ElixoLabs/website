@@ -25,13 +25,13 @@
 
   --shadow-dot: 0 1px 1px rgba(143, 143, 143, 0.1), 0 0 1px rgba(143, 143, 143, 0.1);
 
-  --font-inter-tight: var(--font-inter-tight);
+  --font-montserrat: var(--font-montserrat);
 }
 
 body {
   background: var(--color-base-100);
   color: var(--color-dark-200);
-  font-family: var(--font-inter-tight), sans-serif, system-ui;
+  font-family: var(--font-montserrat), sans-serif, system-ui;
 }
 
 html,

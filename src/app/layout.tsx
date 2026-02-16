@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Inter_Tight } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter_Tight({
-  variable: "--font-inter-tight",
+const montserrat = Montserrat({
+  variable: "--font-montserrat",
   subsets: ["latin"],
   display: "swap",
 });
@@ -141,7 +141,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${inter.variable} ${inter.className} antialiased`}
+        className={`${montserrat.variable} ${montserrat.className} antialiased`}
       >
         {children}
       </body>
