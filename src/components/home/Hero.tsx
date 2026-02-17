@@ -77,7 +77,7 @@ const Hero: React.FC = () => {
   const titleLine2 = 'That Run Your Business'.split(' ');
 
   return (
-    <section className="relative flex flex-col items-center justify-center pt-24 md:pt-32 lg:pt-40 pb-24 lg:pb-36 px-5 md:px-10 overflow-hidden">
+    <section className="relative flex flex-col items-center justify-center pt-32 lg:pt-40 pb-24 lg:pb-36 px-5 md:px-10 overflow-hidden">
       <motion.figure
         className="absolute top-0 left-0 right-0 z-1 overflow-visible pointer-events-none"
         style={{ aspectRatio: '0.840173' }}
