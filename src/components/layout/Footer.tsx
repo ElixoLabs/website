@@ -63,7 +63,7 @@ const Footer: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-[1.5fr_1fr_1fr_1fr] gap-0">
             <motion.div
               variants={itemVariants}
-              className="relative flex flex-col gap-7 p-8 md:p-10"
+              className="relative flex flex-col gap-4 p-8 md:p-10"
             >
               <div className="hidden md:block absolute top-0 bottom-0 right-0 w-px bg-base-400" />
               <span className="text-xl font-bold text-dark-200 tracking-tight">ElixoLabs</span>
@@ -71,9 +71,6 @@ const Footer: React.FC = () => {
                 AI-Native Product Engineering
               </p>
               <div className="flex flex-col gap-3.5">
-                <Button href="/contact" variant="primary" className="w-fit">
-                  Start a Project
-                </Button>
                 <a
                   href="mailto:hello@elixolabs.com"
                   className="text-sm text-base-500 hover:text-base-900 transition-colors"

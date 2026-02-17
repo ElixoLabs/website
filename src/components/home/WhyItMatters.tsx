@@ -83,8 +83,8 @@ const WhyItMatters: React.FC = () => {
           </motion.div>
 
           <motion.div variants={itemVariants} className="flex flex-wrap items-center gap-3 mt-2">
-            <Button href="/contact" variant="primary">Start a Project</Button>
-            <Button href="/#services" variant="secondary" icon={false}>Explore Services</Button>
+            <Button className='flex-1' href="/contact" variant="primary">Start a Project</Button>
+            <Button className='flex-1' href="/#services" variant="secondary" icon={false}>Explore Services</Button>
           </motion.div>
         </motion.div>
 

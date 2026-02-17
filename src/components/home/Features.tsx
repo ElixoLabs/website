@@ -109,8 +109,8 @@ const Features: React.FC = () => {
               transition={{ duration: 0.5, delay: 0.3 }}
               className="flex flex-wrap items-center gap-3 w-full lg:w-auto"
             >
-              <Button href="/contact" variant="primary">Start a Project</Button>
-              <Button href="/#process" variant="secondary" icon={false}>See Our Process</Button>
+              <Button className='flex-1' href="/contact" variant="primary">Start a Project</Button>
+              <Button className='flex-1' href="/#process" variant="secondary" icon={false}>See Our Process</Button>
             </motion.div>
           </div>
 

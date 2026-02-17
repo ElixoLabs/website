@@ -1,4 +1,5 @@
 'use client';
+
 import React from 'react';
 import Image from 'next/image';
 import { motion, Variants } from 'framer-motion';
@@ -96,14 +97,13 @@ const Hero: React.FC = () => {
 
       <div className="relative flex flex-col items-center gap-16 max-w-sm md:max-w-7xl w-full">
         <div className="flex flex-col items-center gap-5 max-w-4xl w-full">
-
-          <div className="flex flex-col items-center gap-10 w-full z-10">
+          <div className="flex flex-col items-center gap-8 md:gap-10 w-full z-10">
             <div className="flex flex-col items-center gap-4 w-full">
               <motion.h1
                 variants={titleContainerVariants}
                 initial="hidden"
                 animate="visible"
-                className="text-4xl md:text-5xl lg:text-5xl leading-tight tracking-tight font-semibold text-dark-200 text-center"
+                className="text-[32px] leading-[1.15] sm:text-3xl md:text-4xl lg:text-[45px] tracking-tight font-semibold text-dark-200 text-center px-2"
               >
                 {titleLine1.map((word, i) => (
                   <React.Fragment key={`w1-${i}`}>
@@ -113,7 +113,10 @@ const Hero: React.FC = () => {
                     {i < titleLine1.length - 1 && ' '}
                   </React.Fragment>
                 ))}
-                <br />
+                
+                <br className="hidden md:block" />
+                {' '}
+                
                 {titleLine2.map((word, i) => (
                   <React.Fragment key={`w2-${i}`}>
                     <motion.span variants={blurWordVariants} className="inline-block">
@@ -130,7 +133,7 @@ const Hero: React.FC = () => {
                 transition={{ duration: 0.5, delay: 0.6 }}
                 className="flex flex-col items-center w-full px-4"
               >
-                <p className="text-base text-base-900 text-center max-w-2xl">
+                <p className="text-sm sm:text-base text-base-900 text-center max-w-2xl">
                   ElixoLabs is an AI-native product engineering firm. We design and build AI agents, 
                   operational platforms, and automation systems - architected for production, not demonstration.
                 </p>
@@ -141,12 +144,12 @@ const Hero: React.FC = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.7 }}
-              className="relative flex flex-wrap justify-center items-center gap-3"
+              className="relative flex flex-col sm:flex-row justify-center items-center gap-3 w-full sm:w-auto px-4 sm:px-0"
             >
-              <Button className='flex-1' href="/contact" variant="primary">
+              <Button className="w-full sm:w-auto sm:flex-1" href="/contact" variant="primary">
                 Start a Project
               </Button>
-              <Button className='flex-1' href="/#services" variant="secondary" icon={false}>
+              <Button className="w-full sm:w-auto sm:flex-1" href="/#services" variant="secondary" icon={false}>
                 Explore Services
               </Button>
             </motion.div>
