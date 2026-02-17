@@ -58,7 +58,7 @@ const Button: React.FC<ButtonProps> = ({
 }) => {
   const style = variantStyles[variant];
 
-  const sharedClasses = `inline-flex items-center justify-center gap-1.5 rounded-lg px-5 py-3 text-sm font-medium cursor-pointer select-none ${style.base} ${className}`;
+  const sharedClasses = `inline-flex whitespace-nowrap items-center justify-center gap-1.5 rounded-lg px-5 py-3 text-sm font-medium cursor-pointer select-none ${style.base} ${className}`;
 
   const motionProps = {
     className: sharedClasses,

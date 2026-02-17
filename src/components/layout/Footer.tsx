@@ -2,7 +2,7 @@
 import React from 'react';
 import { motion, Variants } from 'framer-motion';
 import Link from 'next/link';
-import { BsTwitterX } from 'react-icons/bs';
+import { BsLinkedin, BsTwitterX } from 'react-icons/bs';
 import Button from '@/components/ui/Button';
 
 const containerVariants: Variants = {
@@ -33,6 +33,7 @@ const allPagesLinks = [
 
 const socials = [
   { icon: BsTwitterX, label: 'X', href: 'https://x.com/elixolabs' },
+  { icon: BsLinkedin, label: 'LinkedIn', href: 'https://www.linkedin.com/company/elixolabs' }
 ];
 
 const Footer: React.FC = () => {

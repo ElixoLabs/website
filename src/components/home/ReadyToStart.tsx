@@ -102,11 +102,11 @@ const ReadyToStart: React.FC = () => {
             </motion.p>
           </div>
 
-          <motion.div variants={itemVariants} className="flex items-center gap-3">
-            <Button href="/contact" variant="accent">
+          <motion.div variants={itemVariants} className="flex items-center flex-wrap gap-3">
+            <Button className='flex-1' href="/contact" variant="accent">
               Start a Project
             </Button>
-            <Button href="/#services" variant="dark" icon={false}>
+            <Button className='flex-1' href="/#services" variant="dark" icon={false}>
               Explore Services
             </Button>
           </motion.div>

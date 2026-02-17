@@ -143,10 +143,10 @@ const Hero: React.FC = () => {
               transition={{ duration: 0.5, delay: 0.7 }}
               className="relative flex flex-wrap justify-center items-center gap-3"
             >
-              <Button href="/contact" variant="primary">
+              <Button className='flex-1' href="/contact" variant="primary">
                 Start a Project
               </Button>
-              <Button href="/#services" variant="secondary" icon={false}>
+              <Button className='flex-1' href="/#services" variant="secondary" icon={false}>
                 Explore Services
               </Button>
             </motion.div>

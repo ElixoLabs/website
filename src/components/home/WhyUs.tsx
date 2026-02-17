@@ -2,7 +2,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { motion, Variants } from 'framer-motion';
-import { BsStars } from 'react-icons/bs'; 
+import { BsStars } from 'react-icons/bs';
 import Button from '@/components/ui/Button';
 import SectionBadge from '@/components/ui/SectionBadge';
 
@@ -43,7 +43,7 @@ const WhyUs: React.FC = () => {
     <section className="relative flex flex-col items-center justify-center px-5 md:px-10 pt-20 md:pt-24 pb-16 md:pb-24 overflow-visible">
       <div className="relative w-full max-w-375">
         <div className="relative rounded-2xl bg-dark-200">
-          
+
           <div className="absolute inset-0 rounded-2xl overflow-hidden pointer-events-none">
             <div className="absolute top-0 left-0 right-0 w-full">
               <Image src="/assets/home/difference-top.svg" alt="" width={1200} height={400} className="w-full h-auto" />
@@ -112,9 +112,9 @@ const WhyUs: React.FC = () => {
               ))}
             </div>
 
-            <motion.div variants={itemVariants} className="flex items-center gap-3">
-              <Button href="/contact" variant="accent">Start a Project</Button>
-              <Button href="/#process" variant="dark" icon={false}>See Our Process</Button>
+            <motion.div variants={itemVariants} className="flex items-center flex-wrap gap-3">
+              <Button className='flex-1' href="/contact" variant="accent">Start a Project</Button>
+              <Button className='flex-1' href="/#process" variant="dark" icon={false}>See Our Process</Button>
             </motion.div>
           </motion.div>
         </div>
