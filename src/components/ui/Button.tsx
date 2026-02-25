@@ -6,7 +6,7 @@ import { IoChevronForwardOutline } from 'react-icons/io5';
 
 type ButtonVariant = 'primary' | 'secondary' | 'accent' | 'ghost' | 'dark';
 
-interface ButtonProps {
+interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode;
   variant?: ButtonVariant;
   href?: string;
@@ -55,10 +55,11 @@ const Button: React.FC<ButtonProps> = ({
   className = '',
   onClick,
   type = 'button',
+  disabled = false,
 }) => {
   const style = variantStyles[variant];
 
-  const sharedClasses = `inline-flex whitespace-nowrap items-center justify-center gap-1.5 rounded-lg px-5 py-3 text-sm font-medium cursor-pointer select-none ${style.base} ${className}`;
+  const sharedClasses = `inline-flex whitespace-nowrap items-center justify-center gap-1.5 rounded-lg px-5 py-3 text-sm font-medium cursor-pointer select-none ${style.base} ${className} ${disabled ? 'opacity-50 pointer-events-none' : ''}`;
 
   const motionProps = {
     className: sharedClasses,
@@ -89,7 +90,7 @@ const Button: React.FC<ButtonProps> = ({
   if (href) {
     return (
       <motion.div {...motionProps}>
-        <Link href={href} className="inline-flex items-center justify-center gap-1.5 w-full h-full">
+        <Link href={href} className={`inline-flex items-center justify-center gap-1.5 w-full h-full`}>
           {content}
         </Link>
       </motion.div>
@@ -97,7 +98,9 @@ const Button: React.FC<ButtonProps> = ({
   }
 
   return (
-    <motion.button onClick={onClick} type={type} {...motionProps}>
+    <motion.button
+      onClick={onClick} type={type} {...motionProps}
+    >
       {content}
     </motion.button>
   );

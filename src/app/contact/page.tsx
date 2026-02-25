@@ -44,15 +44,41 @@ const ContactPage: React.FC = () => {
     subject: '',
     message: '',
   });
+  
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState('');
   const [submitted, setSubmitted] = useState(false);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
+    setIsSubmitting(true);
+    setSubmitError('');
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to send message.');
+      }
+
+      setSubmitted(true);
+      // Optional: Reset form
+      setFormData({ name: '', email: '', company: '', subject: '', message: '' });
+    } catch (error) {
+      setSubmitError('Something went wrong. Please try again later.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -65,6 +91,7 @@ const ContactPage: React.FC = () => {
           initial="hidden"
           animate="visible"
         >
+          {/* Header section remains identical */}
           <div className="flex flex-col items-center gap-4 w-full text-center">
             <motion.div variants={itemVariants}>
               <SectionBadge icon={BsEnvelope} label="Contact" />
@@ -114,6 +141,7 @@ const ContactPage: React.FC = () => {
               </div>
             ) : (
               <div className="flex flex-col lg:flex-row">
+                {/* Left side info panel remains identical */}
                 <div className="flex flex-col gap-6 p-8 lg:p-10 border-b lg:border-b-0 lg:border-r border-base-400 lg:w-80 shrink-0">
                   <div className="flex items-center gap-2">
                     <BsEnvelope className="w-4 h-4 text-dark-200" />
@@ -182,7 +210,7 @@ const ContactPage: React.FC = () => {
                       label="Project Type"
                       required
                       value={formData.subject}
-                      onChange={(e: any) => handleChange(e)}
+                      onChange={handleChange as any}
                       options={projectTypeOptions}
                     />
                   </div>
@@ -201,8 +229,19 @@ const ContactPage: React.FC = () => {
                     />
                   </div>
 
-                  <Button type="submit" variant="primary" icon={false} className="w-full sm:w-auto sm:self-end">
-                    Send Message
+                  {/* Display Error if fetch fails */}
+                  {submitError && (
+                    <p className="text-red-500 text-sm">{submitError}</p>
+                  )}
+
+                  <Button 
+                    type="submit" 
+                    variant="primary" 
+                    icon={false} 
+                    className="w-full sm:w-auto sm:self-end disabled:opacity-50"
+                    disabled={isSubmitting}
+                  >
+                    {isSubmitting ? 'Sending...' : 'Send Message'}
                   </Button>
                 </form>
               </div>
