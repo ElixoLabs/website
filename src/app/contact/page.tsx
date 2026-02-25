@@ -133,7 +133,7 @@ const ContactPage: React.FC = () => {
                 </div>
                 <h3 className="text-2xl font-semibold text-dark-200">Thank you!</h3>
                 <p className="text-base text-base-900 max-w-sm">
-                  Your message has been received. We&apos;ll respond within 24 hours with an honest assessment.
+                  Your message has been received. We&apos;ll respond within 24 hours.
                 </p>
                 <Button href="/" variant="primary" className="mt-4">
                   Back to Home
